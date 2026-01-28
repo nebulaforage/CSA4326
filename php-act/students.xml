@@ -1,0 +1,12 @@
+<students>
+    <student>
+        <regno>123</regno>
+        <name>Arun</name>
+        <dept>CSE</dept>
+    </student>
+    <student>
+        <regno>124</regno>
+        <name>Ravi</name>
+        <dept>IT</dept>
+    </student>
+</students>

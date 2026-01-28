@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>SAVEETHA COLLEGE PORTAL</h2>
+
+<input type="text" id="no" placeholder="Enter reg no">
+<br><br>
+
+<button onclick="showresult()">Show Result</button>
+
+<p id="result"></p>
+
+<script>
+function showresult() {
+    const students = [
+        {
+            regno: 1101,
+            name: "Arun",
+            IP: 90,
+            result: "PASS"
+        },
+        {
+            regno: 1102,
+            name: "Vimal",
+            IP: 99,
+            result: "PASS"
+        }
+    ];
+
+    var input = document.getElementById("no").value;
+    var found = false;
+
+    for (let student of students) {
+        if (student.regno == input) {
+            document.getElementById("result").innerHTML =
+                "Reg No: " + student.regno + "<br>" +
+                "Name: " + student.name + "<br>" +
+                "IP Marks: " + student.IP + "<br>" +
+                "Result: " + student.result;
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        document.getElementById("result").innerHTML = "Student not found";
+    }
+}
+</script>
+
+</body>
+</html>

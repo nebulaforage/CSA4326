@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            ACTIVITY : TO PRINT USER NAME AND PASSWORD
+        </title> 
+    </head>
+    <body>
+    
+            USERNAME: <input type="text" id="username"> <br>
+            PASSWORD: <input type="password" id="password"> <br>
+            <button onclick="printdata()">SUBMIT</button>
+
+            <p id="output"></p>
+            
+        <script>
+            function printdata(){
+                user =document.getElementById("username").value;
+                pass =document.getElementById("password").value;
+
+document.getElementById("output").innerHTML =
+                "Username:" + user + "<br>Password:" + pass;
+            }
+        </script>
+
+    
+    </body>
+</html>
