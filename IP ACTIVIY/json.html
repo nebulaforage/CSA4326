@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Example</title>
+</head>
+
+<body>
+
+    <h2>Student Details</h2>
+
+    <p id="output"></p>
+
+    <script>
+        // JSON object
+        var student = {
+            "name": "Rishwanth K C",
+            "age": 20,
+            "course": "Computer Science Engineering",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "email": "rishi@example.com"
+        };
+
+        // Display JSON data on the webpage
+        document.getElementById("output").innerHTML =
+            "<b>Name:</b> " + student.name + "<br>" +
+            "<b>Age:</b> " + student.age + "<br>" +
+            "<b>Course:</b> " + student.course + "<br>" +
+            "<b>Email:</b> " + student.email + "<br>" +
+            "<b>Skills:</b> " + student.skills.join(", ");
+    </script>
+
+</body>
+</html>

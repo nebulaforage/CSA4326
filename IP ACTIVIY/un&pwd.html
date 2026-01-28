@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Username and Password</title>
+
+    <script>
+        function showDetails() {
+            var uname = document.getElementById("username").value;
+            var pwd = document.getElementById("password").value;
+
+            document.getElementById("result").innerHTML =
+                "<b>Username:</b> " + uname + "<br>" +
+                "<b>Password:</b> " + pwd;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>User Login Form</h2>
+
+    <form>
+        Username :
+        <input type="text" id="username"><br><br>
+
+        Password :
+        <input type="password" id="password"><br><br>
+
+        <input type="button" value="Submit" onclick="showDetails()">
+    </form>
+
+    <br>
+    <p id="result"></p>
+
+</body>
+</html>
